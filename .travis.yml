@@ -1,0 +1,12 @@
+language: php
+php:
+    - 5.5
+
+before_script:
+    - node --version
+    - npm --version
+    - phantomjs --version
+
+script:
+    - echo "OK"
+

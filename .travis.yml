@@ -6,7 +6,8 @@ before_script:
     - node --version
     - npm --version
     - phantomjs --version
-    - php -S localhost:8000
+    - nohup php -S localhost:8000 &
+#    - nohup php -S localhost:8000 &>/dev/null &2>/dev/null
 
 script:
     - npm install

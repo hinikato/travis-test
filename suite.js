@@ -8,6 +8,8 @@ var path = require('path');
 var fs = require('fs');
 var wd = require('selenium-webdriver');
 
+console.log(process.env);
+
 wd.promise.controlFlow().on('uncaughtException', function (e) {
     console.log("\nThe following error has occured:\n", e.stack);
     browser.quit();
